@@ -29,7 +29,7 @@ Run the bot
 python bot.py
 ```
 
-**Note:** You would need `OPENAI_API_KEY, TELEGRAM_BOT_TOKEN, SERPAPI_API_KEY` to run the bot.
+**Note:** You would need `OPENAI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `SERPAPI_API_KEY` to run the bot. Consider storing them in `.env` file instead of putting them in the code like I did. 
 
 ### Custom Agent:
 You can use a custom agent by providing `agent_path` parameter in the `initialize_agent` function.

@@ -9,7 +9,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Messa
 
 import os
 os.environ['OPENAI_API_KEY'] = 'your_openai_api_key'
-telegram_token = 'your_telegram_token'
+TELEGRAM_BOT_TOKEN = 'your_telegram_bot_token'
 os.environ['SERPAPI_API_KEY'] = 'your_serp_api_key'
 
 llm=OpenAI(temperature=0)
@@ -51,7 +51,7 @@ async def message(update: Update, context):
     await update.message.reply_text(response)
 
 
-app = ApplicationBuilder().token(telegram_token).connect_timeout(60).build()
+app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).connect_timeout(60).build()
 
 app.add_handler(MessageHandler(None, message))
 print("Starting bot...")
