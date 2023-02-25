@@ -1,5 +1,5 @@
 # langchain-openai-telegram-bot
-A simple implementation of an itelligent telegram chatbot using langchain agents, OpenAI LLM.
+A simple implementation of an intelligent telegram chatbot using langchain agents, OpenAI LLM.
 
 The agent has access to two tools:
 1. Search (SerpAPI)
@@ -40,6 +40,8 @@ You can use a custom agent by providing `agent_path` parameter in the `initializ
 agent_chain = initialize_agent(tools, llm, agent_path="custom_agent.json", verbose=True, memory=memory)
 ```
 Modify the prefix in `custom_agent.json` to suit you need.
+
+The prefix that I provided in `custom_agent.json` is for a bot that solves queries related to taxes in UK
 
 ## Links
 - [OpenAI API](https://openai.com/api/)
