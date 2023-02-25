@@ -19,4 +19,12 @@ python bot.py
 ### Note:
 You would need OPENAI_API_KEY, telegram_token, SERPAPI_API_KEY to run the bot.
 
+Custom Agent:
+You can use a custom agent by providing `agent_path` parameter in the `initialize_agent` function.
+
+```
+agent_chain = initialize_agent(tools, llm, agent_path="custom_agent.json", verbose=True, memory=memory)
+```
+Modify the prefix in `custom_agent.json` to suit you need.
+
 :)
