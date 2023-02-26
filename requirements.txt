@@ -20,7 +20,7 @@ httpcore==0.16.3
 httpx==0.23.3
 hyperframe==6.0.1
 idna==3.4
-langchain==0.0.94
+langchain
 marshmallow==3.19.0
 marshmallow-enum==1.5.1
 multidict==6.0.4
