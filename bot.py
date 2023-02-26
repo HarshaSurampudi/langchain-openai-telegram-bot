@@ -8,9 +8,10 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler
 
 import os
-os.environ['OPENAI_API_KEY'] = 'your_openai_api_key'
-TELEGRAM_BOT_TOKEN = 'your_telegram_bot_token'
-os.environ['SERPAPI_API_KEY'] = 'your_serp_api_key'
+#os.environ['OPENAI_API_KEY'] = 'your_openai_api_key'
+#TELEGRAM_BOT_TOKEN = 'your_telegram_bot_token'
+#os.environ['SERPAPI_API_KEY'] = 'your_serp_api_key'
+TELEGRAM_BOT_TOKEN = os.environ['TELEGRAM_BOT_TOKEN']
 
 llm=OpenAI(temperature=0)
 
